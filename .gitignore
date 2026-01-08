@@ -1,0 +1,11 @@
+# crapOS
+.DS_Store
+
+# pee es code
+.vscode/
+
+# build files
+.build/
+
+# built app
+realNTFS.app/
