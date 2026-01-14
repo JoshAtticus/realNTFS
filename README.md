@@ -5,6 +5,9 @@ A native macOS application to mount NTFS drives as Read/Write with excellent per
 > [!WARNING]
 > This app is for advanced users, it requires disabling SIP and reducing kernel security to allow unsigned kexts. Not for the average user but much nicer to use than any other free app out there for people who have the expertise to set it up.
 
+> [!WARNING]
+> On macOS 15 and 26 (and any future versions), ntfs-3g has issues with performance and reliability. It may cause random kernel panics due to fuse timeouts. A later build may fix this issue.
+
 ## Performance
 ntfs-3g (the actual thing behind this wrapper) has INCREDIBLE performance for a userspace FUSE. Here are some comparisons with different filesystems and tools. All tests are transferring 27.04GB of assorted video files to an external 7200rpm NAS hard drive in an enclosure with USB 2.0 (my cheap dock doesn't support 3.0).
 
